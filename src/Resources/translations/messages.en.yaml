@@ -1,0 +1,59 @@
+rrule.frequency.label: Frequency
+
+rrule.frequency.option.none: none
+rrule.frequency.option.daily: daily
+rrule.frequency.option.weekly: weekly
+rrule.frequency.option.monthly: monthly
+rrule.frequency.option.yearly: yearly
+
+rrule.interval.label: Interval
+
+rrule.weekday.label: Which day(s) of the week does this repeat on
+
+rrule.weekday.option.mo: Mo
+rrule.weekday.option.tu: Tu
+rrule.weekday.option.we: We
+rrule.weekday.option.th: Th
+rrule.weekday.option.fr: Fr
+rrule.weekday.option.sa: Sa
+rrule.weekday.option.so: So
+
+rrule.untilRule.option.count: How many times does this transaction occur?
+rrule.untilRule.option.date: Specific Date (aka until)
+
+rrule.yearlyRule.option.oneMonth: One Month Out of the Year
+rrule.yearlyRule.option.byMonth: Multiple Months
+rrule.yearlyRule.option.byDay: Or be precise
+
+rrule.byMonth.option.january: january
+rrule.byMonth.option.february: february
+rrule.byMonth.option.march: march
+rrule.byMonth.option.april: april
+rrule.byMonth.option.may: may
+rrule.byMonth.option.june: june
+rrule.byMonth.option.july: july
+rrule.byMonth.option.august: august
+rrule.byMonth.option.september: september
+rrule.byMonth.option.october: october
+rrule.byMonth.option.november: november
+rrule.byMonth.option.december: december
+
+rrurle.monthdayRule.option.byMonthDay: Which day(s) of the month does this repeat on
+rrurle.monthdayRule.option.byDay: by Day
+
+rrule.byDayWeekday.option.sunday: sunday
+rrule.byDayWeekday.option.monday: monday
+rrule.byDayWeekday.option.tuesday: tuesday
+rrule.byDayWeekday.option.wednesday: wednesday
+rrule.byDayWeekday.option.thursday: thursday
+rrule.byDayWeekday.option.friday: friday
+rrule.byDayWeekday.option.saturday: saturday
+rrule.byDayWeekday.option.day: all day
+rrule.byDayWeekday.option.weekday: weekday
+rrule.byDayWeekday.option.weekendDay: weekend day
+
+rrule.byDayPos.option.first: first
+rrule.byDayPos.option.second: second
+rrule.byDayPos.option.third: third
+rrule.byDayPos.option.fourth: fourth
+rrule.byDayPos.option.last: last

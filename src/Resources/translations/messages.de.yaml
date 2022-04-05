@@ -1,0 +1,59 @@
+rrule.frequency.label: Frequenz
+rrule.frequency.option.none: keine
+rrule.frequency.option.daily: Täglich
+rrule.frequency.option.weekly: wöchentlich
+rrule.frequency.option.monthly: monatlich
+rrule.frequency.option.yearly: jährlich
+
+rrule.interval.label: Intervall
+
+rrule.weekday.label: An welchen Wochentag(en) ist die Wiederholung
+
+rrule.weekday.option.mo: Mo
+rrule.weekday.option.tu: Di
+rrule.weekday.option.we: Mi
+rrule.weekday.option.th: Do
+rrule.weekday.option.fr: Fr
+rrule.weekday.option.sa: Sa
+rrule.weekday.option.so: So
+
+rrule.untilRule.option.count: Wie viele male soll wiederholt werden?
+rrule.untilRule.option.date: Wiederholen bis
+
+rrule.yearlyRule.option.oneMonth: Ein Monat im Jahr
+rrule.yearlyRule.option.byMonth: Mehrere Monate
+rrule.yearlyRule.option.byDay: Genau am
+
+rrule.byMonth.option.january: Januar
+rrule.byMonth.option.february: Februar
+rrule.byMonth.option.march: März
+rrule.byMonth.option.april: April
+rrule.byMonth.option.may: Mai
+rrule.byMonth.option.june: Juni
+rrule.byMonth.option.july: Juli
+rrule.byMonth.option.august: August
+rrule.byMonth.option.september: September
+rrule.byMonth.option.october: Oktober
+rrule.byMonth.option.november: November
+rrule.byMonth.option.december: Dezember
+
+rrurle.monthdayRule.option.byMonthDay: An welchen Tag(en) soll wiederholt werden
+rrurle.monthdayRule.option.byDay: Oder
+
+rrule.byDayWeekday.option.sunday: Sonntag
+rrule.byDayWeekday.option.monday: Montag
+rrule.byDayWeekday.option.tuesday: Dienstag
+rrule.byDayWeekday.option.wednesday: Mittwoch
+rrule.byDayWeekday.option.thursday: Donnerstag
+rrule.byDayWeekday.option.friday: Freitag
+rrule.byDayWeekday.option.saturday: Samstag
+rrule.byDayWeekday.option.day: alle Wochentage
+rrule.byDayWeekday.option.weekday: Arbeitstage
+rrule.byDayWeekday.option.weekendDay: wochenend Tage
+
+rrule.byDayPos.option.first: Erster
+rrule.byDayPos.option.second: Zweiter
+rrule.byDayPos.option.third: Dritter
+rrule.byDayPos.option.fourth: Vierter
+rrule.byDayPos.option.last: Letzter
+

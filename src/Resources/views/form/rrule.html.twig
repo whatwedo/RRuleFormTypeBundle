@@ -1,0 +1,71 @@
+{% block rrule_widget -%}
+    <div>
+        <div class="row" data-controller="whatwedo--rruleform-bundle--rrule">
+            <div class="col-md-3">
+                {{ form_row(form.freq) }}
+            </div>
+            <div id="recurring-rules" class="col-md-9" data-whatwedo--rruleform-bundle--rrule-target="rrule" style="display: none">
+                {{ form_row(form.interval) }}
+
+                <div data-whatwedo--rruleform-bundle--rrule-target="weekly">
+                    {{ form_label(form.weekday) }}<br>
+                    {{ form_widget(form.weekday) }}
+                </div>
+
+                <div data-whatwedo--rruleform-bundle--rrule-target="monthly">
+                    {{ form_widget(form.monthlyRule.children.0) }} {{ form_label(form.monthlyRule.children.0) }}
+                    {{ _self.table(form.monthlyMonthDay, 7, '40px') }}
+
+                    {{ form_widget(form.monthlyRule.children.1) }} {{ form_label(form.monthlyRule.children.1) }}
+                    {{ form_widget(form.monthlyByDayPos) }}
+                    {{ form_widget(form.monthlyByDayWeekday) }}
+                </div>
+                <div data-whatwedo--rruleform-bundle--rrule-target="yearly">
+                    {{ form_widget(form.yearlyRule.children.0) }} {{ form_label(form.yearlyRule.children.0) }}
+                    {{ form_widget(form.yearlyOneMonthByMonth) }}
+                    {{ form_widget(form.yearlyOneMonthDay) }}
+
+                    {{ form_widget(form.yearlyRule.children.1) }} {{ form_label(form.yearlyRule.children.1) }}
+                    {{ _self.table(form.yearlyByMonthByMonth, 4, '120px') }}
+
+                    {{ form_widget(form.yearlyRule.children.2) }} {{ form_label(form.yearlyRule.children.2) }}
+                    {{ form_widget(form.yearlyByDayPos) }}
+                    {{ form_widget(form.yearlyByDayWeekday) }}
+                    {{ form_widget(form.yearlyByDayByMonth) }}
+                </div>
+                <div>
+                    {{ form_widget(form.untilRule.children.0) }} {{ form_label(form.untilRule.children.0) }}
+                    {{ form_widget(form.untilCount) }}
+                    {{ form_widget(form.untilRule.children.1) }} {{ form_label(form.untilRule.children.1) }}
+                    {{ form_widget(form.untilDate) }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{%- endblock rrule_widget %}
+
+{% macro table(formItem, cols, colWidth) %}
+    <table>
+        <colgroup>
+            {% for i in 1..cols %}
+                <col width="{{ colWidth }}"/>
+            {% endfor %}
+        </colgroup>
+        {% for item in formItem %}
+            {% if loop.first %}
+                <tr>
+            {% elseif (loop.index % cols == 1) %}
+                </tr>
+                <tr>
+            {% endif %}
+            <td>
+                {{ form_widget(item) }} {{ form_label(item) }}
+            </td>
+            {% if loop.last %}
+                </tr>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+{% endmacro %}

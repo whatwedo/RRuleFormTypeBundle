@@ -1,0 +1,33 @@
+{
+    "name": "whatwedo/rruleform-bundle",
+    "type": "symfony-bundle",
+    "description": "Form-Type for rrule, using stimulus.js",
+    "license": "MIT",
+    "keywords": [
+        "symfony-ux"
+    ],
+    "authors": [
+        {
+            "name": "Maurizio Monticelli",
+            "email": "maurizio@whatwedo.ch"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "symfony/framework-bundle": "^5|^6"
+    },
+    "require-dev": {
+        "whatwedo/php-coding-standard": "dev-develop"
+    },
+    "autoload": {
+        "psr-4": {
+            "whatwedo\\RruleFormBundle\\": "src/",
+            "whatwedo\\RruleFormBundle\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

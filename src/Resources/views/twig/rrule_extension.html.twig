@@ -1,0 +1,24 @@
+{% if rrule is defined %}
+    {% if rrule['FREQ'] is defined %}
+        FREQ: {{ rrule['FREQ'] }}<br>
+    {% endif %}
+    {% if rrule['INTERVAL'] is defined %}
+        INTERVAL: {{ rrule['INTERVAL'] }}<br>
+    {% endif %}
+    {% if rrule['COUNT'] is defined %}
+        COUNT: {{ rrule['COUNT'] }}<br>
+    {% endif %}
+    {% if rrule['BYMONTH'] is defined %}
+        BYMONTH: {{ rrule['BYMONTH'] }}<br>
+    {% endif %}
+    {% if rrule['BYMONTHDAY'] is defined %}
+        BYMONTHDAY: {{ rrule['BYMONTHDAY'] }}<br>
+    {% endif %}
+    {% if rrule['BYDAY'] is defined %}
+        BYDAY: {{ rrule['BYDAY'] }}<br>
+    {% endif %}
+    {% if rrule['BYSETPOS'] is defined %}
+        BYSETPOS: {{ rrule['BYSETPOS'] }}<br>
+    {% endif %}
+{% endif %}
+
