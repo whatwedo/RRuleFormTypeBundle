@@ -35,7 +35,29 @@ add ´"whatwedo/rruleform-bundle": "dev-master"´ to ´composer.json´
 run `composer install`
 
 ```
-composer install --force
+composer install
+```
+
+add `FormBundle` to `bundles.json`
+
+```phpt
+    whatwedo\RruleFormBundle\whatwedoRruleFormBundle::class => ['all' => true],
+```
+
+add `"@whatwedo/rrule"` to `packages.json`
+
+```json
+    "devDependencies": {    
+        "@whatwedo/rrule": "file:vendor/whatwedo/rruleform-bundle/Resources/assets"
+    }
+```
+
+add `theme` to `twig.yqml`
+
+```yaml
+twig:
+  form_themes:
+    - '@whatwedoRruleForm/form/rrule.html.twig'
 ```
 
 add `"@whatwedo/rrule"` to `packages.json`
