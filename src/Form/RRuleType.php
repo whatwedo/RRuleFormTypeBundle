@@ -8,6 +8,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\DataMapperInterface;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormInterface;
@@ -43,14 +44,14 @@ class RRuleType extends AbstractType implements DataMapperInterface
             )
             ->add(
                 'interval',
-                NumberType::class,
+                IntegerType::class,
                 [
                     'label' => 'rrule.interval.label',
                     'attr' => [
                         'min' => 1,
                         'max' => 31,
                     ],
-                    'html5' => true,
+                    //'html5' => true,
                     'required' => true,
                     'attr' => [
                         'data-whatwedo--rruleform-bundle--rrule-target' => 'interval',
@@ -526,7 +527,7 @@ class RRuleType extends AbstractType implements DataMapperInterface
         if ($forms['freq']->getData() !== 'none') {
             $result = [];
             $result[] = 'FREQ=' . strtoupper($forms['freq']->getData());
-            $result[] = 'INTERVAL=' . strtoupper($forms['interval']->getData());
+            $result[] = 'INTERVAL=' . $forms['interval']->getData();
 
             if ($forms['freq']->getData() === 'weekly') {
                 $result[] = 'BYDAY=' . strtoupper(implode(',', $forms['weekday']->getData()));
